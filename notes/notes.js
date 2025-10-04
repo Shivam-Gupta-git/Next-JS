@@ -1,4 +1,4 @@
-// -> file structure of a Next.js project
+// -> file structure of a Next.js project...................
 
 // my-next-app/
 // │
@@ -28,3 +28,18 @@
 // ├── next.config.js            # Next.js configuration
 // ├── package.json              # Dependencies and scripts
 // └── node_modules/             # Installed packages
+
+// -> How to Create a Route Group.....................
+
+// app/
+//  ├── (auth)/
+//  │    ├── login/
+//  │    │    └── page.tsx
+//  │    ├── register/
+//  │    │    └── page.tsx
+//  ├── (dashboard)/
+//  │    ├── profile/
+//  │    │    └── page.tsx
+//  │    ├── settings/
+//  │    │    └── page.tsx
+//  └── layout.tsx
