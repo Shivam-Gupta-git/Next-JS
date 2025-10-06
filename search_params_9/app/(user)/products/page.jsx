@@ -9,6 +9,8 @@ const Products = async ({searchParams}) => {
  const sort = searchProduct?.sort || "default"
  const page = searchProduct?.page || 1
 
+
+
  return(
   <>
   <ProductList/>
