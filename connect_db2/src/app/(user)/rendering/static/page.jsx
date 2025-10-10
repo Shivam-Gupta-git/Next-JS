@@ -2,6 +2,7 @@ import { Doctor } from "@/model/Doctordetails.model"
 
 const StaticRendering = async () => {
   console.log("Static Page")
+  
   let doctorData = []
   try {
     doctorData = await Doctor.find({})
