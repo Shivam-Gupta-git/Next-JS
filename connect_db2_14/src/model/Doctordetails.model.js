@@ -70,5 +70,4 @@ const doctorScheema = new mongoose.Schema({
     require: true,
   },
 });
-export const Doctor =
-  mongoose.models.Doctor || mongoose.model("Doctor", doctorScheema);
+export const Doctor = mongoose.models.Doctor || mongoose.model("Doctor", doctorScheema);
