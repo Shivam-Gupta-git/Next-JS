@@ -4,6 +4,7 @@ import { dataBase } from "@/lib/dataBase.lib";
 export const revalidate = 10;
 
 const StaticRendering = async () => {
+  
   let userData = [];
   try {
     await dataBase();
