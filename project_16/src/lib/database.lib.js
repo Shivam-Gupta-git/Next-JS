@@ -8,6 +8,6 @@ export const dataBase = async () => {
     await mongoose.connect(`${process.env.MONGODB_URI}/nextProject`)
     console.log("mongodb connection successful")
   } catch (error) {
-    console.error("mongodb connection failed". error)
+    console.error("mongodb connection failed", error)
   }
 }
