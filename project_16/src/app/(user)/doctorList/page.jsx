@@ -17,7 +17,7 @@ const Doctor = async () => {
   try {
     await dataBase();
     const rawData = await Doctordetails.find({});
-    // Convert Mongoose documents to plain objects
+    
     doctorData = JSON.parse(JSON.stringify(rawData));
     console.log("doctor data fetching successfully");
   } catch (error) {
