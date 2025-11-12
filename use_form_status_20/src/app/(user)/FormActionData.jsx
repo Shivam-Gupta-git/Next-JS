@@ -2,6 +2,7 @@
 
 import { dataBase } from "@/lib/ database.lib"
 import { UserDetails } from "@/model/user.model"
+import { redirect } from "next/navigation"
 
 export const FormActionData = async (previousState, formData) => {
   const {firstName, lastName, email, password, contact} = Object.fromEntries(formData.entries())
@@ -18,9 +19,11 @@ export const FormActionData = async (previousState, formData) => {
 
     await newUser.save()
     console.log("User Save Successfully")
-    return{success: true, message: "form submit successfully"}
+    // return{success: true, message: "form submit successfully"}
+    redirect("/")
   } catch (error) {
-    console.error("user Save failed", error)
+    if(error.message === "NEXT_REDIRECT") throw error
+    // console.error("user Save failed", error)
     return{success: false, message: "error while submit "}
   }
 }
