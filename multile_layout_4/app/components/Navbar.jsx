@@ -1,6 +1,7 @@
 import Link from "next/link"
 
 const Navbar = async () => {
+  // Navbar Section
   return(
   <header className="w-[100%] h-[60px] bg-amber-600 flex flex-row justify-around items-center">
     <div className="text-xl font-bold">Logo</div>
